@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'category/CategoriesPage.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -9,12 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Food App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(),
+      home: CategoriesPage(),
     );
   }
 }
