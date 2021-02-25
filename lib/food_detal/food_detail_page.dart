@@ -18,6 +18,12 @@ class FoodDetailPage extends StatelessWidget{
           FadeInImage.assetNetwork(
             placeholder: "assets/images/loading.gif",
             image: _food.urlImage,
+          ),
+          ListTile(
+            leading: CircleAvatar(
+              child: Text("${_food.id}"),
+            ),
+            title: Text(_food.name),
           )
         ],
       ),
